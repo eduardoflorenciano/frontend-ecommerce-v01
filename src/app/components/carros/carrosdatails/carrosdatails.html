@@ -1,0 +1,31 @@
+<br />
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 centralizar topo">
+      <div class="card">
+        <div class="card-body">
+          <h3>Coloque suas informações</h3>
+          <br />
+          <mdb-form-control>
+            <input mdbInput type="text" id="marca" class="form-control" [(ngModel)]="carro.marca" />
+            <label mdbLabel class="form-label" for="marca">Marca</label>
+          </mdb-form-control>
+          <br />
+          <mdb-form-control>
+            <input mdbInput id="modelo" class="form-control" [(ngModel)]="carro.modelo" />
+            <label mdbLabel class="form-label" for="modelo">Modelo</label>
+          </mdb-form-control>
+          <br />
+          <mdb-form-control>
+            <input mdbInput id="medida" class="form-control" [(ngModel)]="carro.medida" />
+            <label mdbLabel class="form-label" for="medida">Medida</label>
+          </mdb-form-control>
+          <br />
+          <button type="button" class="btn btn-primary btn-rounded" mdbRipple (click)="save()">
+            Salvar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
